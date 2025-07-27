@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { 
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 300ms ease-in-out;
+}
+
+.slide-down {
+  animation: slideDown 300ms ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 300ms ease-in-out;
+}
+
+.accordion-content {
+  transition: max-height 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.accordion-icon {
+  transition: transform 300ms ease-in-out;
+}
+
+.accordion-open .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.cookie-banner {
+  animation: slideUp 500ms ease-in-out;
+}
+
+.modal-overlay {
+  animation: fadeIn 200ms ease-in-out;
+}
+
+.modal-content {
+  animation: slideDown 300ms ease-in-out;
+}

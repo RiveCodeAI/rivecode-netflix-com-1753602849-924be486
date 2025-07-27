@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --netflix-red: #E50914;
+}
+
+body {
+  @apply bg-black text-white font-sans;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.netflix-gradient {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.netflix-button {
+  @apply bg-[#E50914] text-white font-medium px-4 py-3 rounded hover:bg-[#f40612] transition-colors;
+}
+
+.netflix-input {
+  @apply bg-[rgba(0,0,0,0.75)] border border-[#333] text-white px-4 py-3 rounded focus:outline-none focus:border-[#E50914];
+}
